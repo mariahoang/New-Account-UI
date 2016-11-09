@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Create New Account</title>
+	<link rel='stylesheet' href="./css/design.css"/>
+</head>
+<body>
+
+    <form id='theForm' method="post" action="index.html">
+        <fieldset id="front" class="flip">
+            <input type="text" id="usrName" placeholder="Username" />
+            <input type="password" id="pwd1" placeholder="Password" />
+            <input type="password"id="pwd2" placeholder="Re-Enter Password" />
+            <a id="contd" href="#">Continue</a>
+        </fieldset>
+
+        <fieldset id="back" class="flip">
+            <input type="text" id="firstName" placeholder="Full Name" required/>
+            <input type='number' placeholder="Age" name='age' min='18' max='150' required/>
+            <input type="text" id="address" placeholder="Address" required/>
+            <input type="text" id="province" list="provinces" placeholder="Province" required>
+                <datalist id='provinces'>
+                    <option value='AB'> Alberta </option>
+                    <option value='BC'> British Columbia </option>
+                    <option value='MB'> Manitoba </option>
+                    <option value='NB'> New Brunswick </option>
+                    <option value='NL'> Newfoundland and Labrador </option>
+                    <option value='NS'> Nova Scotia </option>
+                    <option value='ON'> Ontario </option>
+                    <option value='PE'> Prince Edward Island </option>
+                    <option value='QB'> Quebec </option>
+                    <option value='SK'> Saskatchewan </option>         
+                </datalist>
+            <input type="text" id="country" placeholder="Country" required/>
+            <input type="text" id="postalCode" placeholder="Postal Code" required/>
+            <a id="returnBack" href="#">Back</a>
+            <input id ='submit' type='submit' value='Submit' onsubmit="popUp()"/>
+        </fieldset>
+    </form>
+
+	<script type="text/javascript" src="./js/javascript.js"></script>
+
+</body>
+</html>
